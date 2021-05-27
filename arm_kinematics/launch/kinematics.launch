@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<launch>
+
+	<!-- static transform publishers for grid environment -->
+	<node pkg="tf2_ros" type="static_transform_publisher" name="world_rail_tf" args="0 0 0 0 0 0 1 world rail" />
+	<node pkg="tf2_ros" type="static_transform_publisher" name="rail_grid_tf" args="0 1 0 0 0 0 1 rail grid" />
+
+	<!-- forward and inverse kinematics for SCARA arm -->
+	<node name="arm_forward_kinematics" pkg="arm_kinematics" type="forward_kinematics.py" output="screen"/>
+	<node name="arm_inverse_kinematics" pkg="arm_kinematics" type="inverse_kinematics.py" output="screen"/>
+
+</launch>

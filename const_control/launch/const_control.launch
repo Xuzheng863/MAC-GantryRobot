@@ -1,0 +1,6 @@
+<launch>
+    <node name="tic_ros" pkg="const_control" type="tic_ros.py" output="screen"/>
+    <node name="gripper" pkg="const_control" type="servo_gripper.py" output="screen">
+    <param name="port" value="/dev/serial/by-id/usb-Seeed_Seeed_XIAO_M0_A20628BF50534B54332E3120FF063122-if00"/>
+    </node>
+</launch>

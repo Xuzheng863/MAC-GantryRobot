@@ -1,0 +1,6 @@
+#params for the robot arm
+R_PZ: 0.204 #length along z0 from revolute joint to prismatic joint
+P_RX: 0.538 #length along x1 prismatic joint to revolute joint
+P_RZ: 0.047 #length along z1 revolute joint to x2 (revolute joint)
+R_RX: 0.410 #length along x2 revolute joint to revolute joint
+R_EZ: 0.066 #length along z3 to end effector 
