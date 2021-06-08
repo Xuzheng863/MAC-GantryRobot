@@ -1,4 +1,4 @@
 <?xml version="1.0" ?>
 <launch>
-	<node name="grid_viz" pkg="arm_navigation" type="grid_viz.py" output="screen"/>
+	<node name="viz_main" pkg="arm_navigation" type="viz_main.py" output="screen"/>
 </launch>
