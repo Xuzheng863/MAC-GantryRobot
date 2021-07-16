@@ -1,4 +1,12 @@
 <?xml version="1.0" ?>
 <launch>
-	<node name="viz_main" pkg="arm_navigation" type="viz_main.py" output="screen"/>
+	<node name="robot_frame_viz" pkg="arm_navigation" args="0.4 1.0 1.7" type="robot_frame_viz.py" output="screen"/>
+
+	<node name="gantry_m1" pkg="arm_navigation" args="m1 /home/vvvvv/catkin_ws/src/MAC-GantryRobot/arm_navigation/config/center_coords_left.yaml" type="robot_viz.py" output="screen"/>
+
+	<node name="gantry_m2" pkg="arm_navigation" args="m2 /home/vvvvv/catkin_ws/src/MAC-GantryRobot/arm_navigation/config/center_coords_right.yaml" type="robot_viz.py" output="screen"/>
+
+	<node name="structure_viz" pkg="arm_navigation" type="grid_viz.py" output="screen"/>
+
+	<!-- <node name="viz_main" pkg="arm_navigation" type="viz_main.py" output="screen"/> -->
 </launch>
